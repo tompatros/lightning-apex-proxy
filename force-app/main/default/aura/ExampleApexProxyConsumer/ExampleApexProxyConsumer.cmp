@@ -1,0 +1,6 @@
+<aura:component controller="ExampleApex">
+	<aura:attribute name="method1Value" type="String" description="Returned from ExampleApex.method1" />
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+	<c:ApexProxy aura:id="apexProxy" />
+	method1Value : {!v.method1Value}
+</aura:component>	
