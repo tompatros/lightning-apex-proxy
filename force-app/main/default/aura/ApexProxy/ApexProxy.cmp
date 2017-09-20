@@ -1,0 +1,14 @@
+<aura:component >
+
+    <aura:registerEvent name="componentEvent" type="c:ApexProxyComponentEvent" />
+    <aura:registerEvent name="applicationEvent" type="c:ApexProxyApplicationEvent" />
+
+    <aura:method name="call">
+        <aura:attribute name="action" type="Object" />
+        <aura:attribute name="actionParams" type="Object" />
+        <aura:attribute name="onSuccess" type="Object" />
+        <aura:attribute name="onError" type="Object" />
+        <aura:attribute name="eventLevel" type="String" default="null" />
+    </aura:method>
+
+</aura:component>
