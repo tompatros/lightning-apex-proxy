@@ -112,7 +112,7 @@ var params = { param1 : 'PARAM1' };
 apexProxy.call(action, params, 'doSuccessStuff', 'doErrorStuff', 'COMPONENT');
 ```
 
-Any component handling ApexProxyApplicationEvent will receive the event with:
+Any component handling ApexProxyComponentEvent will receive the event with:
 
 * title = 'doSuccessStuff' (or 'doErrorStuff')
 * data = the response of the method
