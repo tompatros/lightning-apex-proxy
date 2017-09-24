@@ -4,6 +4,8 @@ The Lightning Apex Proxy component makes calls to @AuraEnabled Apex methods easi
 
 This repo is a Salesforce DX project. To get started, you'll need to spin up a scratch org, pull this repo and push the components into your scratch org.
 
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com)
+
 ## Usage
 
 1. Make a Lightning Component that needs to call an Apex method.
