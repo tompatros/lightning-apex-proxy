@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <name>ApexClass</name>
+    <members>ExampleApex</members>
+  </types>
+  <types>
+    <name>AuraDefinitionBundle</name>
+    <members>ApexProxy</members>
+    <members>ApexProxyApplicationEvent</members>
+    <members>ApexProxyComponentEvent</members>
+    <members>ExampleApexProxyConsumer</members>
+    <members>ExampleApp</members>
+  </types>
+  <version>40.0</version>
+</Package>
