@@ -1,0 +1,16 @@
+<aura:component controller="ExampleApex">
+	
+	<aura:attribute name="applicationEventValue" type="String" description="Set by handleApexProxyApplicationEvent" />
+	
+    <c:ApexProxy aura:id="apexProxy" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />    
+    <aura:handler event="c:ApexProxyApplicationEvent" action="{!c.handleApexProxyApplicationEvent}" />
+
+    <div class="slds-text-heading_large">APEX PROXY + APPLICATION EVENT</div>
+   	<aura:if isTrue="{!v.applicationEventValue}">
+        <article class="slds-tile slds-box">
+            <h3 class="slds-tile__title">applicationEventValue : {!v.applicationEventValue}</h3>
+        </article>
+    </aura:if>
+	
+</aura:component>

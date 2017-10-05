@@ -1,6 +1,7 @@
 <aura:component >
 
-    <aura:registerEvent name="componentEvent" type="c:ApexProxyComponentEvent" />
+	<aura:registerEvent name="onComplete" type="c:ApexProxyComponentEvent" />
+    <!-- <aura:registerEvent name="componentEvent" type="c:ApexProxyComponentEvent" /> -->
     <aura:registerEvent name="applicationEvent" type="c:ApexProxyApplicationEvent" />
 
     <aura:method name="call" description="Call an @AuraEnabled method on an Apex class, pass parameters, callbacks and events to fire.">

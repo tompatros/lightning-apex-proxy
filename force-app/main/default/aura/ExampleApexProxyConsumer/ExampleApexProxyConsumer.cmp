@@ -1,6 +1,14 @@
 <aura:component controller="ExampleApex">
-	<aura:attribute name="method1Value" type="String" description="Returned from ExampleApex.method1" />
-	<aura:handler name="init" value="{!this}" action="{!c.init}" />
-	<c:ApexProxy aura:id="apexProxy" />
-	method1Value : {!v.method1Value}
-</aura:component>	
+	
+	<aura:attribute name="callbackValue" type="String" description="Set by apexProxy onSuccess callback" />
+    <c:ApexProxy aura:id="apexProxy" />
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />    
+    
+    <div class="slds-text-heading_large">APEX PROXY</div>
+    <aura:if isTrue="{!v.callbackValue}">
+        <article class="slds-tile slds-box">
+            <h3 class="slds-tile__title">callbackValue : {!v.callbackValue}</h3>
+        </article>
+    </aura:if>
+	
+</aura:component>

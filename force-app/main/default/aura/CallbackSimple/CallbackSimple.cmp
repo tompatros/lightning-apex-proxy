@@ -1,0 +1,14 @@
+<aura:component controller="CallbackSimpleController">
+	
+	<aura:attribute name="callbackDone" type="Boolean" default="false" />
+	<aura:handler name="init" value="{!this}" action="{!c.init}" />
+	
+    <div class="slds-text-heading_large">A SIMPLE CALLBACK</div>
+    
+	<aura:if isTrue="{!v.callbackDone}">
+		<article class="slds-tile slds-box">
+			<h3 class="slds-tile__title">Hooray! We made a callback!</h3>
+		</article>
+	</aura:if>
+	
+</aura:component>

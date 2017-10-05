@@ -1,4 +1,4 @@
-<aura:event type="COMPONENT" description="Event template">
+<aura:event type="COMPONENT" description="Component-level Event emitted by ApexProxy component.">
 	<aura:attribute name="title" type="String" />
     <aura:attribute name="data" type="Object" />
     <aura:attribute name="error" type="Object" />

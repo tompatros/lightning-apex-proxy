@@ -1,0 +1,26 @@
+<aura:component controller="CallbackHellController">
+	
+	<aura:attribute name="inCircle1" type="Boolean" default="false" />
+	<aura:attribute name="inCircle2" type="Boolean" default="false" />
+	<aura:attribute name="inCircle3" type="Boolean" default="false" />
+	<aura:handler name="init" value="{!this}" action="{!c.beginDescent}" />
+	
+    <div class="slds-text-heading_large">CALLBACK HELL</div>
+    
+	<aura:if isTrue="{!v.inCircle1}">
+		<article class="slds-tile slds-box">
+			<h3 class="slds-tile__title">Welcome to the first circle of Callback Hell!</h3>
+		</article>
+	</aura:if>
+	<aura:if isTrue="{!v.inCircle2}">
+		<article class="slds-tile slds-box">
+			<h3 class="slds-tile__title">Welcome to the second circle of Callback Hell!</h3>
+		</article>
+	</aura:if>
+	<aura:if isTrue="{!v.inCircle3}">
+		<article class="slds-tile slds-box">
+			<h3 class="slds-tile__title">Welcome to the third circle of Callback Hell!</h3>
+		</article>
+	</aura:if>
+	
+</aura:component>

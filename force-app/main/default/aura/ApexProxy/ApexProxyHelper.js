@@ -9,8 +9,8 @@
 		var onError = args.onError;
 		var eventLevel = args.eventLevel;
 
-		var componentEvent = component.getEvent("componentEvent");
-		var applicationEvent = $A.get("e.c:applicationEvent");
+		var componentEvent = component.getEvent("onComplete");
+		var applicationEvent = $A.get("e.c:ApexProxyApplicationEvent");
 
 		action.setParams(actionParams);
 
